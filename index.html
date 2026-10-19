@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple, accessible FAQ accordion built with Tailwind CSS and Preline UI."
+    />
+    <title>Frequently Asked Questions | Preline Accordion</title>
+    <link rel="stylesheet" href="./css/output.css" />
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900 antialiased">
+    <main class="mx-auto flex min-h-screen max-w-5xl flex-col justify-center px-5 py-16 sm:px-8">
+      <section aria-labelledby="page-title" class="mx-auto w-full max-w-2xl">
+        <div class="mb-8 text-center">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-blue-700">
+            Help center
+          </p>
+          <h1 id="page-title" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Frequently asked questions
+          </h1>
+          <p class="mx-auto mt-4 max-w-xl text-base leading-7 text-gray-600">
+            A few quick answers to help you get started with Preline UI.
+          </p>
+        </div>
+
+        <div class="hs-accordion-group overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
+          <div class="hs-accordion active border-b border-gray-200" id="accordion-heading-one">
+            <h2>
+              <button
+                id="accordion-trigger-one"
+                type="button"
+                class="hs-accordion-toggle flex w-full items-center justify-between gap-4 px-5 py-5 text-left text-base font-semibold text-gray-900 transition hover:bg-gray-50 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-600 sm:px-6"
+                aria-expanded="true"
+                aria-controls="accordion-content-one"
+              >
+                <span>What is Preline UI?</span>
+                <svg
+                  class="size-5 shrink-0 transition-transform duration-300 hs-accordion-active:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-content-one"
+              class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300"
+              role="region"
+              aria-labelledby="accordion-trigger-one"
+            >
+              <div class="px-5 pb-5 text-sm leading-6 text-gray-600 sm:px-6">
+                <p>
+                  Preline UI is a component library designed to work with Tailwind CSS. It provides
+                  reusable interface components and JavaScript behaviors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hs-accordion border-b border-gray-200" id="accordion-heading-two">
+            <h2>
+              <button
+                id="accordion-trigger-two"
+                type="button"
+                class="hs-accordion-toggle flex w-full items-center justify-between gap-4 px-5 py-5 text-left text-base font-semibold text-gray-900 transition hover:bg-gray-50 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-600 sm:px-6"
+                aria-expanded="false"
+                aria-controls="accordion-content-two"
+              >
+                <span>Why use a component library?</span>
+                <svg
+                  class="size-5 shrink-0 transition-transform duration-300 hs-accordion-active:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-content-two"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              role="region"
+              aria-labelledby="accordion-trigger-two"
+            >
+              <div class="px-5 pb-5 text-sm leading-6 text-gray-600 sm:px-6">
+                <p>
+                  Component libraries provide tested patterns that can save development time while
+                  still allowing us to customize the final design.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hs-accordion" id="accordion-heading-three">
+            <h2>
+              <button
+                id="accordion-trigger-three"
+                type="button"
+                class="hs-accordion-toggle flex w-full items-center justify-between gap-4 px-5 py-5 text-left text-base font-semibold text-gray-900 transition hover:bg-gray-50 hover:text-blue-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-blue-600 sm:px-6"
+                aria-expanded="false"
+                aria-controls="accordion-content-three"
+              >
+                <span>Can I customize a Preline component?</span>
+                <svg
+                  class="size-5 shrink-0 transition-transform duration-300 hs-accordion-active:rotate-180"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="m6 9 6 6 6-6"></path>
+                </svg>
+              </button>
+            </h2>
+            <div
+              id="accordion-content-three"
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              role="region"
+              aria-labelledby="accordion-trigger-three"
+            >
+              <div class="px-5 pb-5 text-sm leading-6 text-gray-600 sm:px-6">
+                <p>
+                  Yes. Preline provides the component structure and behavior, while Tailwind
+                  utilities let you adapt the appearance to fit your project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./node_modules/preline/dist/preline.js"></script>
+  </body>
+</html>
